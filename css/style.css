@@ -22,6 +22,7 @@ button {
     background-color: grey;
     color: white;
     font-size: 2rem;
+    border-radius: 12px;
 }
 
 
@@ -39,6 +40,10 @@ button {
 
 }
 
-#negative {
-    color: red;
-}
+
+button:hover { 
+    background-color: white;
+    outline: grey;
+    color: grey;
+
+  }

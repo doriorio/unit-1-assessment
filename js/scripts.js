@@ -22,22 +22,12 @@ buttonMinus.addEventListener("click", subtract)
 function base(){
     displayNum.textContent = parseInt(userEntry.value);
     userVal = parseInt(userEntry.value);
-    console.log(parseInt(userEntry.value));
-    // if (isNaN(checkInt) === false){
-    //     displayNum.textContent = "NaN";
-    //     console.log(isNaN(checkInt));
-    // }
 
-    // else {
-        // displayNum.innerHTML = checkInt;
-    // }
-    
 }
 
 function add(){
     base();
-    total = userVal + total;
-    console.log(total);
+    total += userVal;
     display();
 
     
@@ -45,16 +35,13 @@ function add(){
 
 function subtract(){
     base();
-    total = total - userVal;
+    total -= userVal;
     display();
-    console.log(total);
-
 }
 
 function display(){
     displayNum.textContent = total;
     if (total < 0){
-        console.log('hitting');
         displayNum.style.color = "#ff0000";
     }
     if (total >= 0)
